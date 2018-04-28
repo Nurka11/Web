@@ -3,9 +3,11 @@
 <head>
 	<link rel="stylesheet" href="index.css">
 	<script src="index.js" defer></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 
-<body onload="onload();" onscroll="changingSection()">
+<body onload="onload();" >
 
 
 	<div class="loader">
@@ -15,12 +17,12 @@
 	</div>
 
 
-	<header class="scrolled">
+	<header>
 		<div class="logo">
 			<div class="log"></div>
 		</div>
 		<div>
-			<ul>
+			<ul id="navUl">
 				<li class="homeBar"><a href=""></a>HOME</li>
 				<li class="processBar"><a href=""></a>PROCESS</li>
 				<li class="featuresBar"><a href=""></a>FEATURES</li>
@@ -35,7 +37,7 @@
 		<div class="bgcolor"></div>
 		<div class="play"></div>
 		<h3>HELLO WELCOME TO LHANDER.</h3>
-		<h1>Our awesome app will make your life a lot easier.</h1>
+		<div class="mainTitle"><h1>Our awesome app will make your life a lot easier.</h1></div>
 		<div class="learnbutton">LEARN MORE</div>
 	</section>
 
@@ -43,15 +45,26 @@
 		<div class="prcontent">
 			<h4>PROCESS</h4>
 			<h2>How it works?</h2>
-			<p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+			<p class="description">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+			<div class="hr"></div>
+
 			<div class="info">
 				<div class="leftInfo">
+					<div class="number">1</div>
+					<div class="title">SIGN UP</div>
 					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
+					<div class="number">2</div>
+					<div class="title">UPLOAD</div>
 					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
 				</div>
 				<div class="mobile"><img src="images/appdesign.jpg" alt=""></div>
 				<div class="rightInfo">
+					<div class="number">3</div>
+					<div class="title">CREATE</div>
 					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
+					<div class="number">4</div>
+					<div class="title">PUBLISH</div>
 					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
 				</div>
 			</div>
@@ -59,59 +72,257 @@
 	</section>
 
 	<section class="features">
-		<div class="prcontent">
-			<h4>PROCESS</h4>
-			<h2>How it works?</h2>
-			<p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-			<div class="info">
-				<div class="leftInfo">
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
-					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
+		<div class="ftcontent">
+			<div>
+				<h4>FEATURES</h4>
+				<h2 style="color: white">Great features you'll love.</h2>
+				<p class="description">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+				<div class="hr"></div>
+
+			</div>
+			<div>
+				<div class="subcontents">
+					<img src="images/logo.png" alt="">
+					<div class="title">RETINA READY</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, molestias fugit ab. Natus alias optio, repellat nulla! Vero quae ab quo culpa pariatur consequatur deleniti sed? Id, neque magni. Laudantium.</p>
 				</div>
-				<div class="mobile"><img src="images/appdesign.jpg" alt=""></div>
-				<div class="rightInfo">
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
-					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
+				<div class="subcontents">
+					<img src="images/logo.png" alt="">
+					<div class="title">RETINA READY</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, molestias fugit ab. Natus alias optio, repellat nulla! Vero quae ab quo culpa pariatur consequatur deleniti sed? Id, neque magni. Laudantium.</p>
+				</div>
+				<div class="subcontents">
+					<img src="images/logo.png" alt="">
+					<div class="title">RETINA READY</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos veritatis maxime, corrupti fugiat illo quam recusandae aliquam voluptate harum aliquid a doloremque iure necessitatibus, dolore vero? Explicabo est, placeat ducimus!</p>
+				</div>
+				<div class="subcontents">
+					<img src="images/logo.png" alt="">
+					<div class="title">RETINA READY</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus at autem dolore aut provident consequatur voluptatum illum inventore omnis corporis quam nisi esse doloremque officiis, porro molestias. Nostrum, rem, nemo.</p>
+				</div>
+				<div class="subcontents">
+					<img src="images/logo.png" alt="">
+					<div class="title">RETINA READY</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro ipsum, ipsam voluptatibus facilis, voluptate, aut modi dolorum ad autem eligendi, nobis beatae est accusantium in. Quas, laboriosam totam velit eaque.</p>
+				</div>
+				<div class="subcontents">
+					<img src="images/logo.png" alt="">
+					<div class="title">RETINA READY</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure non ea, corrupti odit vel mollitia adipisci iste atque laboriosam veniam nostrum labore sint eveniet quis aliquid, culpa nisi, quidem numquam.</p>
 				</div>
 			</div>
 		</div>
 	</section>
+
 	<section class="pricing">
-		<div class="prcontent">
-			<h4>PROCESS</h4>
-			<h2>How it works?</h2>
-			<p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-			<div class="info">
-				<div class="leftInfo">
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
-					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
+		<div class="ftcontent">
+			<div>
+				<h4>OUR PRICING</h4>
+				<h2>Pick the best plan for you.</h2>
+				<p class="description" style="color:#737373">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+				<div class="hr"></div>
+			</div>
+			<div class="types">
+				<div class="type">
+					<div>
+						<h3>Standard</h3>
+						<h1>4.99$</h1>
+						<h3>Per month</h3>
+						<p>Billed Annually.</p>
+					</div>
+					<div>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<button type="button" class="getStarterButton">Get Started</button>
+					</div>
 				</div>
-				<div class="mobile"><img src="images/appdesign.jpg" alt=""></div>
-				<div class="rightInfo">
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
-					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
+				<div class="type">
+					<div>
+						<h3>Standard</h3>
+						<h1>4.99$</h1>
+						<h3>Per month</h3>
+						<p>Billed Annually.</p>
+					</div>
+					<div>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<button type="button" class="getStarterButton">Get Started</button>
+					</div>
+				</div>
+				<div class="type">
+					<div>
+						<h3>Standard</h3>
+						<h1>4.99$</h1>
+						<h3>Per month</h3>
+						<p>Billed Annually.</p>
+					</div>
+					<div>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<button type="button" class="getStarterButton">Get Started</button>
+					</div>
+				</div>
+				<div class="type">
+					<div>
+						<h3>Standard</h3>
+						<h1>4.99$</h1>
+						<h3>Per month</h3>
+						<p>Billed Annually.</p>
+					</div>
+					<div>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<p><span>3GB</span> Storage</p>
+						<button type="button" class="getStarterButton">Get Started</button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+
+	<section class="clientTalk">
+		<div class="clcontent">
+			<h2 style="font-size: 30px;">Hear What Are Clients Say.</h2>
+
+			<div class="hr"></div>
+
+			<div class="carousel first">
+				<div class="clientInfo">
+					<img src="images/avatars/avatar-3.jpg" alt="" id="clientImage">
+					<span>JONH DOE</span>
+					<p>CEO, Apple</p>
+				</div>
+				<div class="clientSaid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates est veniam delectus praesentium, laudantium dolorem deserunt nisi placeat maxime sint. Quos asperiores incidunt, quae aspernatur aperiam assumenda perspiciatis qui!Soluta voluptate suscipit expedita doloremque consequuntur reprehenderit eveniet culpa illo unde et optio blanditiis, at vel. In expedita placeat nobis illum quidem, minus dolor repellendus eveniet! Error beatae cum architecto.
+				</div>
+			</div>
+			<div class="carousel second hidden">
+				<div class="clientInfo">
+					<img src="images/avatars/avatar-3.jpg" alt="" id="clientImage">
+					<span>JONH DOE</span>
+					<p>CEO, SFDGFCHVBYKHJB</p>
+				</div>
+				<div class="clientSaid">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum voluptates est veniam delectus praesentium, laudantium dolorem deserunt nisi placeat maxime sint. Quos asperiores incidunt, quae aspernatur aperiam assumenda perspiciatis qui!Soluta voluptate suscipit expedita doloremque consequuntur reprehenderit eveniet culpa illo unde et optio blanditiis, at vel. In expedita placeat nobis illum quidem, minus dolor repellendus eveniet! Error beatae cum architecto.
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="faq">
-		<div class="prcontent">
-			<h4>PROCESS</h4>
-			<h2>How it works?</h2>
-			<p>Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-			<div class="info">
-				<div class="leftInfo">
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
-					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
+		<div class="faqcontent">
+			<h4>FAQ</h4>
+			<h2>Questions and Answers.</h2>
+			<p class="description">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+
+			<div class="hr"></div>
+
+			<div class="questionAnswers">
+				<div class="discussion">
+					<div class="question">What features are not included in the free version?</div>
+					<div class="answer">Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</div>
 				</div>
-				<div class="mobile"><img src="images/appdesign.jpg" alt=""></div>
-				<div class="rightInfo">
-					<div><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque dolores, quasi perferendis provident excepturi corrupti labore ratione sapiente!</p></div>
-					<div><p>Dolores voluptatum sed, totam ab dolore vel laborum reprehenderit perferendis fugit excepturi!</p></div>
+				<div class="discussion">
+					<div class="question">What features are not included in the free version?</div>
+					<div class="answer">Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</div>
 				</div>
+				<div class="discussion">
+					<div class="question">What features are not included in the free version?</div>
+					<div class="answer">Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</div>
+				</div>
+				<div class="discussion">
+					<div class="question">What features are not included in the free version?</div>
+					<div class="answer">Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</div>
+				</div>
+				<div class="discussion">
+					<div class="question">What features are not included in the free version?</div>
+					<div class="answer">Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</div>
+				</div>
+				<div class="discussion">
+					<div class="question">What features are not included in the free version?</div>
+					<div class="answer">Lorem ipsum Id in magna ad culpa dolor eu aute non amet aute ea in consectetur in quis nostrud anim proident dolore in sed et mollit voluptate culpa irure consequat laborum ea sint in mollit adipisicing cupidatat.</div>
+				</div>
+			</div>
+
+			<hr id="questionHr">
+
+			<div class="bottomSide">
+				<h2 style="font-size: 30px;padding-top: 2%;">Styleshout Recommends Dreamhost.</h2>
+				<p class="description">Looking for an awesome and reliable webhosting? Try DreamHost. Get $50 off when you sign up with the promocode styleshout.</p>
+			</div>
+
+			<div class="signup">SIGN UP NOW</div>
+
+		</div>
+	</section>
+
+	<section class="gettingStarted">
+		<div class="getContent">
+			<h2 style="color: white; font-size:32px;">Get started now. Try Lhander free for 30 days.</h2>
+			<p class="description" style="color: white; font-size: 20px;">Download the app now. Available on the:</p>
+
+			<div class="appButtonsDiv">
+				<div class="appButtons">App Store</div>
+				<div class="appButtons">Play Store</div>
+				<div class="appButtons">Win Store</div>
 			</div>
 		</div>
 	</section>
+
+	<section class="aboutUs">
+		<div class="aboutcontent">
+			<div>
+				<ul>
+					<div style="width: 100%;display: -webkit-flex;display: -ms-flex;display: flex;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;justify-content:center;-ms-align-items: center;align-items: center;">
+						<div class="mainLogo">
+						</div>
+						<p>LHANDER</p>
+					</div>
+					<li>1600 Amphitheatre Parkway</li>
+					<li>1600 Amphitheatre Parkway</li>
+					<li>1600 Amphitheatre Parkway</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<span class="headerAbout">Site Links</span>
+					<li>About Us</li>
+					<li>About Us</li>
+					<li>About Us</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<span class="headerAbout">Site Links</span>
+					<li>About Us</li>
+					<li>About Us</li>
+					<li>About Us</li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<span class="headerAbout">Site Links</span>
+					<li>Keep yourself updated. Subscribe to our newsletter.</li>
+					<li><input type="text" class="emailInput"></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<p>© Copyright Lhander 2016.</p>
+		<div></div>
+		<p>Design by <span>styleshout</span></p>
+	</footer>
+
 </body>
 
 </html>
