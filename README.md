@@ -1,3 +1,3 @@
 # Web
 
-It's just web landig page
+It's just web landing page
